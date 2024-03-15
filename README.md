@@ -1,26 +1,25 @@
-# employee_profile
+# Employee_Profile
 
 # Prerequisites
 Python 3.x
 R (with required packages installed: readr, utils)
 
-1. Import Data
+# Import Data
 Run the Python script import_data.py to import the provided CSV file into your Jupyter Notebook.
 
 python import_data.py
 
-2. Create Employee Function
+# Create Employee Function
 Develop a Python function that accepts an employee's name as input and returns their details.
 
 from employee_functions import get_employee_details
 
-
-3. Data Processing with Dictionary
+# Data Processing with Dictionary
 Process the salary data using a Python dictionary.
 
 from employee_functions import process_data_with_dictionary
 
-4. Error Handling
+# Error Handling
 Implement error handling in your code to address potential issues gracefully.
 
 try:
@@ -28,14 +27,13 @@ try:
 except Exception as e:
     print("An error occurred:", e)
     
-5. Export Employee Details
+# Export Employee Details
 Export an employee's details to a CSV file and save it within a zipped folder named "Employee Profile."
 
 from employee_functions import export_employee_details
 
-6. Unzip and Display Data with R
+# Unzip and Display Data with R
 Use R to unzip the folder created in step 5 and display the data.
-
 
 # Load necessary libraries
 library(readr)
